@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Static Comp 2</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <button><img class="header-icons" src="images/list-grey.svg" alt="list icon"></button>
+        <div class="search-container"><img class="search-icon" src="images/search.svg" alt="search icon"></div>
+        <input class="search-input" type="text" name="search-input" placeholder="Search for a job, task or resume">
+        <input class="search-input small" type="text" name="search-input" placeholder="Search">
+        <button class="hidden-button"><img class="header-icons" src="images/new-user-grey.svg" alt="new user icon"></button>
+        <button class="hidden-button"><img class="header-icons" src="images/add-list-grey.svg" alt="add list icon"></button>
+        <button class="hidden-button"><img class="header-icons" src="images/menu-grey.svg" alt="menu icon"></button>
+      </nav>
+      <section class="page-title">
+        <h1>Customer Service Representative</h1>
+        <p class="location-name">
+          <img class="title-icon" src="images/location-darkgrey.svg" alt="location icon">
+          San Francisco, CA ᛫ <a href="link">Preview this post</a>
+        </p>
+      </section>
+      <section class="open-section">
+        <button class="open-button first-open">
+          <img class="open-icon" src="images/open-button.svg" alt="green icon">
+          OPEN
+        </button>
+        <button class="open-button"><img class="open-icons" src="images/bookmark-grey.svg" alt="bookmark icon"></button>
+        <button class="open-button"><img class="open-icons" src="images/pencil-grey.svg" alt="pencil icon"></button>
+        <button class="open-button last"><img class="open-icons" src="images/trash-grey.svg" alt="trash icon"></button>
+      </section>
+      <nav class="content-nav">
+        <a href="">SUMMARY</a>
+        <a href="">APPLICANTS</a>
+        <a class="small-hide-nav" href="">JOB BOARD</a>
+        <a class="hide-nav" href="">INTERVIEWS</a>
+        <a class="hide-nav" href="">ACTIVITY</a>
+        <a class="hide-nav" href="">BROADCAST</a>
+        <a class="hide-nav" href="">NOTIFICATIONS</a>
+        <img class="more-options" src="images/carrot.svg">
+      </nav>
+    </header>
+    <nav class="sidebar">
+      <figure class="user-img">
+        <img src="images/user-pic.jpg" alt="dog user pic">
+        <figcaption>Aria Doggo</figcaption>
+      </figure>
+      <table class="sidebar-tables">
+        <th>Main</th>
+        <tr>
+          <td><img class="sidebar-icons" src="images/home-grey.svg" alt="home icon">HOME</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/jobs-grey.svg" alt="jobs icon">JOBS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/resumes-grey.svg" alt="resumes icon">RESUMES</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/tasks-grey.svg" alt="tasks icon">TASKS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/calendar-grey.svg" alt="calendar icon">CALENDAR</td>
+        </tr>
+      </table>
+      <table class="sidebar-tables">
+        <th>Admin</th>
+        <tr>
+          <td><img class="sidebar-icons" src="images/users-grey.svg" alt="users icon">USERS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/location-ltgrey.svg" alt="location icon">LOCATIONS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/workflows-grey.svg" alt="workflows icon">WORKFLOWS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/job-boards-grey.svg" alt="job boards icon">JOB BOARDS</td>
+        </tr>
+        <tr>
+          <td><img class="sidebar-icons" src="images/social-grey.svg" alt="social icon">SOCIAL</td>
+        </tr>
+      </table>
+      <table class="sidebar-tables">
+        <th>Categories</th>
+        <tr>
+          <td>
+            <label class="checkbox-container" for="administrative">
+              <input class="checkboxes" type="checkbox" name="administrative">
+              <img src="images/yellow-box.svg" class="checkmarks admin" alt="yellow checkbox">
+              Administrative
+          </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="checkbox-container" for="design">
+            <input class="checkboxes" type="checkbox" name="design">
+            <img src="images/blue-box.svg" class="checkmarks design" alt="blue checkbox">
+            Design
+          </label>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="checkbox-container" for="executive">
+              <input class="checkboxes" type="checkbox" name="executive">
+              <img src="images/pink-box.svg" class="checkmarks exec" alt="pink checkbox">
+              Executive
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="checkbox-container" for="human-resources">
+              <input class="checkboxes" type="checkbox" name="human-resources">
+              <img src="images/green-box.svg" class="checkmarks human-res" alt="green checkbox">
+              Human Resources
+          </label>
+        </td>
+        </tr>
+      </table>
+    </nav>
+    <main>
+      <article class="graphs">
+        <section class="circle-graphs">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart one">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="30, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">2,643</text>
+              <text x="18" y="25" class="sml-circle-text">Applicants</text>
+            </svg>
+          </div>
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart two">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">1,398</text>
+              <text x="18" y="25" class="sml-circle-text">Interviews</text>
+            </svg>
+          </div>
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circle-chart three">
+              <path class="circle-big"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path class="circle"
+              stroke-dasharray="65, 100"
+              d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <text x="18" y="20.35" class="lg-circle-text">866</text>
+              <text x="18" y="25" class="sml-circle-text">Forwards</text>
+            </svg>
+          </div>           
+        </section>
+        <section class="bar-graph">
+          <figure>
+            <img class="bar-graph-img" src="images/bar-graph.png" alt="bar graph">
+          </figure>
+        </section>
+        <!-- <section class="graph-buttons-container"> -->
+        <button class="graph-buttons circle">TOTALS ᛫ Out of 5,231 views</button>
+        <button class="graph-buttons bar">APPLICANTS/DAY</button>
+        </section>
+      </article>
+      <table class=job-details>
+        <th colspan="2">JOB DESCRIPTION</th>
+        <tr></tr>
+          <td class="bold-td">POSITION TITLE</td>
+          <td>Customer Service Representative</td>
+        <tr>
+          <td class="bold-td">LOCATION</td>
+          <td>San Francisco, CA</td>
+        </tr>
+        <tr>
+          <td class="bold-td">EMPLOYMENT TYPE</td>
+          <td>Full-time</td>
+        </tr>
+        <tr>
+          <td class="bold-td">EXPERIENCE</td>
+          <td>Mid-level</td>
+        </tr>
+        <tr>
+          <td class="bold-td">STATUS</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td class="bold-td">DESCRIPTION</td>
+          <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+        </tr>
+        <tr>
+          <td class="bold-td">HIRING LEAD</td>
+          <td>Tom Tizzy</td>
+        </tr>
+        <tr class="last-row">
+          <td class="bold-td">APPROVED SALARY</td>
+          <td>$58,000</td>
+        </tr>
+      </table>
+      <aside>
+        <button class="post-buttons facebook"><img src="images/facebook.svg" alt="facebook icon">Post to Facebook</button>
+        <button class="post-buttons twitter"><img src="images/twitter.svg" alt="twitter icon">Tweet this Job</button>
+        <button class="post-buttons linkedin"><img src="images/linkedin.svg" alt="linked in icon">Post to Linkedin</button>
+        <form>
+          <h2><img class="aside-icons" src="images/world.svg" alt="world icon">Link to this Job</h2>
+          <label>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.</label>
+          <div class="copy-wrapper">
+            <input class="copy-link"type="website" name="linkJobURL" placeholder="http://loremipsum.dol/sit amet...">
+            <button class="copy-button">Copy</button>
+          </div>
+        </form>
+        <form>
+          <h2><img class="aside-icons" src="images/button-widget.svg" alt="widget icon">Use the Button Widget</h2>
+          <label>This widget embeds the buttons for sharing the job for submitting a resume on your website.</label>
+          <div class="copy-wrapper">
+            <input class="copy-link" type="text" name="buttonWidget" placeholder="<script type=&quot;text/javascript&quot; s...">
+            <button class="copy-button">Copy</button>
+          </div>
+        </form>
+        <form>
+          <h2><img class="aside-icons" src="images/paper-plane.svg" alt="plane icon">Upload Resumes by Email</h2>
+          <label>You can automatically upload multiple resumes to this job by emailing the address below.</label>
+          <input class="email-input" type="email" name="email" placeholder="tomtizzy@gmail.com">
+        </form>
+      </aside>
+    </main>
+<!--     <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+  </body>
+</html>

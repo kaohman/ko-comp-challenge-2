@@ -16,5 +16,3 @@ Static composition made to match specifications outlined in the assignment [HERE
 ## Final Site Comp
 ### Web View
 ![web view](images/static-comp-2.png)
-
-![mobile view](images/static-comp-2-mobile.png)

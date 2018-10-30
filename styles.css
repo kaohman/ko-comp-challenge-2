@@ -382,12 +382,15 @@ main {
 }
 
 /*JOB TABLE*/
+.job-table-div {
+  flex: 2;
+}
+
 .job-details {
   background-color: white;
   border-collapse: collapse;
   border-radius: 5px;
   color: #7c899e;
-  flex: 2;
   margin: 25px 25px 25px 45px;
 }
 

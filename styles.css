@@ -51,7 +51,6 @@ header {
 
 .search-icon {
   width: 20px;
-
 }
 
 .header-nav button {
@@ -59,6 +58,10 @@ header {
   border: 1px solid lightgrey;
   height: 75px;
   width: 75px;
+}
+
+button:hover {
+  background-color: lightgrey;
 }
 
 .header-icons {
@@ -72,6 +75,7 @@ header {
 .title-icon {
   height: 16px;
 }
+
 
 h1 {
   margin: 50px 0 5px 50px;
@@ -130,15 +134,19 @@ a {
 
 .content-nav {
   width: 95%;
-  padding: 0 0 15px 50px;
+  padding: 0 0 15px 42px;
 }
 
 .content-nav a {
-  padding-right: 15px;
+  padding: 0 10px 11px 10px;
   white-space: nowrap;
   font-size: 14px;
   font-weight: bold;
   color: #8c95a4;
+}
+
+.content-nav a:hover {
+  border-bottom: 4px solid #47a4f3;
 }
 
 .more-options {
@@ -166,7 +174,6 @@ a {
   height: 75px;
   object-fit: cover;
   object-position: top;
-  border: 1px solid;
   border-radius: 100%;
 }
 
@@ -184,20 +191,25 @@ figcaption {
 .sidebar-tables {
   border-top: 2px solid #2b3240;
   width: 100%;
-  padding: 15px 10px 15px 20px;
+  padding: 15px 0 15px 0;
 }
 
 .sidebar-tables th {
   color: #67748b;
   font-size: 14px;
   text-align: left;
-  padding: 10px 0;
+  padding: 10px 10px 10px 20px;
 }
 
 .sidebar-tables td {
-  padding: 10px 0;
+  padding: 10px 10px 10px 20px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.sidebar-links:hover {
+  background-color: #313948;
+  border-left: 4px solid #47a4f3;
 }
 
 .checkboxes {
@@ -245,18 +257,18 @@ main {
   display: block;
   margin: 10px auto;
   /*max-width: 80%;*/
-  max-height: 150px;
+  max-height: 175px;
 }
 
 .circle-big {
   fill: none;
   stroke: #d8e3eb;
-  stroke-width: 3.8;
+  stroke-width: 2.5;
 }
 
 .circle {
   fill: none;
-  stroke-width: 3.8;
+  stroke-width: 2.5;
   stroke-linecap: round;
   animation: progress 3s ease-out forwards;
 }
@@ -317,6 +329,10 @@ main {
   padding: 0 15px;
 }
 
+.graph-buttons.bar {
+  margin-bottom: 50px;
+}
+
 .job-details {
   color: #7c899e;
   border-collapse: collapse;
@@ -333,22 +349,46 @@ main {
   padding: 20px;
   background-color: #717E93;
   color: white;
+  font-size: 14px;
 }
 
 .job-details td {
   padding: 22px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.edit-icon {
+  width: 16px;
+  padding-right: 5px;
+}
+
+.edit-button {
+  margin-left: 10px;
+  background-color: #7e8ba4;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .bold-td {
   font-weight: bold;
+  font-size: 14px;
 }
 
-.job-details td {
-  border-bottom: 1px solid lightgrey;
+.hiring-lead {
+  display: flex;
+  align-items: center;
+}
+
+.hiring-lead-img {
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 
 .last-row td {
-  padding-bottom: 25px;
   border-bottom: none;
 }
 
@@ -386,6 +426,10 @@ label {
 .post-buttons img {
   height: 16px;
   margin-right: 15px;
+}
+
+.post-buttons:hover {
+  background-color: #374050;
 }
 
 .facebook {
@@ -468,6 +512,10 @@ label {
   .more-options {
     display: inline-block;
   }
+
+  .graphs {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 875px) {
@@ -524,7 +572,7 @@ label {
   }
 
   .job-details td {
-    padding: 10px 5px;
+    padding: 10px;
   }
   
   .open-section {

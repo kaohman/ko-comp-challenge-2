@@ -7,10 +7,10 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 200px 1fr;
+  margin: 0;
+  padding: 0;
 }
 
 /*HEADER STYLES*/
@@ -21,16 +21,20 @@ header {
 }
 
 .header-nav {
-  width: 100%;
   display: flex;
+  width: 100%;
+}
+
+.header-icons {
+  width: 25px;
 }
 
 .header-nav input {
-  border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   border-left: none;
-  height: 75px;
+  border-top: 1px solid lightgrey;
   flex: 1;
+  height: 75px;
 }
 
 ::placeholder {
@@ -39,10 +43,14 @@ header {
 }
 
 .search-container {
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
   height: 75px;
   padding: 25px 15px 0 25px;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+}
+
+.search-input {
+  padding-left: 10px;
 }
 
 .search-input.small {
@@ -64,10 +72,6 @@ button:hover {
   background-color: lightgrey;
 }
 
-.header-icons {
-  width: 25px;
-}
-
 .page-title {
   flex: 3;
 }
@@ -76,15 +80,14 @@ button:hover {
   height: 16px;
 }
 
-
 h1 {
-  margin: 50px 0 5px 50px;
   color: #4e515d;
+  margin: 50px 0 5px 50px;
 }
 
 p {
-  margin: 0 0 50px 50px;
   color: #8c95a4;
+  margin: 0 0 50px 50px;
 }
 
 a {
@@ -92,13 +95,12 @@ a {
   text-decoration: none;
 }
 
-
 .open-section {
-  margin-left: 30px;
+  align-items: center;
   display: flex;
   flex: 1;
   justify-content: flex-end;
-  align-items: center;
+  margin-left: 30px;
 }
 
 .open-icon {
@@ -107,20 +109,20 @@ a {
 }
 
 .open-button {
-  border-radius: 100%;
   background-color: white;
+  border-radius: 100%;
   border: 1px solid lightgrey;
   height: 40px;
-  width: 40px;
   margin: 0 5px;
+  width: 40px;
 }
 
 .first-open {
-  width: 100px;
   border-radius: 30px;
+  color: #8c95a4;
   font-size: 14px;
   font-weight: bold;
-  color: #8c95a4;
+  width: 100px;
 }
 
 .open-icons {
@@ -133,16 +135,16 @@ a {
 }
 
 .content-nav {
-  width: 95%;
   padding: 0 0 15px 42px;
+  width: 95%;
 }
 
 .content-nav a {
-  padding: 0 10px 11px 10px;
-  white-space: nowrap;
+  color: #8c95a4;
   font-size: 14px;
   font-weight: bold;
-  color: #8c95a4;
+  padding: 0 10px 11px 10px;
+  white-space: nowrap;
 }
 
 .content-nav a:hover {
@@ -154,13 +156,12 @@ a {
   height: 14px;
 }
 
-
 /*SIDEBAR STYLES*/
 .sidebar {
-  order: -1;
-  grid-row: span 2;
   background-color: #374050;
   color: #a2acbd;
+  grid-row: span 2;
+  order: -1;
 }
 
 .user-img {
@@ -168,18 +169,18 @@ a {
 }
 
 .user-img img {
+  border-radius: 100%;
   display: block;
-  margin: 0 auto;
-  width: 75px;
   height: 75px;
+  margin: 0 auto;
   object-fit: cover;
   object-position: top;
-  border-radius: 100%;
+  width: 75px;
 }
 
 figcaption {
-  text-align: center;
   margin-top: 10px;
+  text-align: center;
 }
 
 .sidebar-icons {
@@ -190,21 +191,21 @@ figcaption {
 
 .sidebar-tables {
   border-top: 2px solid #2b3240;
-  width: 100%;
   padding: 15px 0 15px 0;
+  width: 100%;
 }
 
 .sidebar-tables th {
   color: #67748b;
   font-size: 14px;
-  text-align: left;
   padding: 10px 10px 10px 20px;
+  text-align: left;
 }
 
 .sidebar-tables td {
-  padding: 10px 10px 10px 20px;
   font-size: 14px;
   font-weight: bold;
+  padding: 10px 10px 10px 20px;
 }
 
 .sidebar-links:hover {
@@ -218,34 +219,31 @@ figcaption {
 
 .checkmarks {
   height: 15px;
-  width: 15px;
   margin-right: 5px;
+  width: 15px;
 }
-
 
 /*MAIN CONTENT STYLES*/
 main {
-  border-top: 1px solid lightgrey;
   background-color: #edf2f6;
+  border-top: 1px solid lightgrey;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 25px;
 }
 
 .graphs {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 25px 25px 0 45px;
   width: 100%;
-  border-bottom: 2px solid lightgrey;
-  margin: 25px 25px 40px 25px;
 }
 
 
 /*CIRCLE GRAPHS*/
 .circle-graphs {
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
   justify-content: center;
 }
 
@@ -256,7 +254,6 @@ main {
 .circle-chart {
   display: block;
   margin: 10px auto;
-  /*max-width: 80%;*/
   max-height: 175px;
 }
 
@@ -267,10 +264,10 @@ main {
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2.5;
-  stroke-linecap: round;
   animation: progress 3s ease-out forwards;
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.5;
 }
 
 @keyframes progress {
@@ -303,14 +300,14 @@ main {
   text-anchor: middle;
 }
 
+/*BAR GRAPH*/
 .bar-graph {
   display: flex;
   flex-wrap: wrap;
-  /*grid-area: bar-graph;*/
 }
 
 .bar-graph figure {
-  margin: auto;
+  margin: 10px auto 10px auto;
 }
 
 .bar-graph-img {
@@ -318,58 +315,110 @@ main {
 }
 
 .graph-buttons {
-  margin: 10px auto;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid lightgrey;
   color: #5b6677;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 30px;
-  background-color: white;
-  border: 1px solid lightgrey;
   height: 40px;
+  margin: 10px auto;
   padding: 0 15px;
 }
 
 .graph-buttons.bar {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.job-details {
-  color: #7c899e;
-  border-collapse: collapse;
-  background-color: white;
-  flex: 2;
-  margin: 25px;
-  border-radius: 5px;
+/*COLLAPSE DIV*/
+.collapse-div {
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
-.job-details th {
-  border-radius: 5px 5px 0 0;
-  border: none;
-  text-align: left;
-  padding: 20px;
-  background-color: #717E93;
-  color: white;
-  font-size: 14px;
+.fancy {
+  line-height: 0.5;
+  text-align: center;
 }
 
-.job-details td {
-  padding: 22px;
+.fancy button {
+  display: inline-block;
+  position: relative;
+}
+
+.fancy button:before, 
+.fancy button:after {
   border-bottom: 1px solid lightgrey;
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  width: 38vw; 
+}
+
+.fancy button:before {
+  margin-right: 15px;
+  right: 90%;
+}
+
+.fancy button:after {
+  left: 90%;
+  margin-left: 15px;
+}
+
+.collapse-button {
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+.up-arrow {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  height: 10px;
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+/*JOB TABLE*/
+.job-details {
+  background-color: white;
+  border-collapse: collapse;
+  border-radius: 5px;
+  color: #7c899e;
+  flex: 2;
+  margin: 25px 25px 25px 45px;
 }
 
 .edit-icon {
-  width: 16px;
   padding-right: 5px;
+  width: 16px;
 }
 
 .edit-button {
-  margin-left: 10px;
   background-color: #7e8ba4;
+  border-radius: 5px;
   border: none;
-  padding: 10px 15px;
   color: white;
   font-weight: bold;
-  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px 15px;
+}
+
+.job-details th {
+  background-color: #717E93;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  text-align: left;
+}
+
+.job-details td {
+  border-bottom: 1px solid lightgrey;
+  padding: 22px;
 }
 
 .bold-td {
@@ -378,20 +427,21 @@ main {
 }
 
 .hiring-lead {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .hiring-lead-img {
-  width: 40px;
   border-radius: 100%;
   margin-right: 10px;
+  width: 40px;
 }
 
 .last-row td {
   border-bottom: none;
 }
 
+/*ASIDE*/
 aside {
   flex: 1;
   padding: 25px;
@@ -404,8 +454,8 @@ aside {
 }
 
 h2 {
-  font-size: 18px;
   color: #717a89;
+  font-size: 18px;
   margin: 35px 0 10px 0;
 }
 
@@ -415,12 +465,12 @@ label {
 }
 
 .post-buttons {
-  color: white;
   border-radius: 5px;
   border: none;
-  width: 100%;
+  color: white;
   height: 45px;
   margin: 0 auto 10px auto;
+  width: 100%;
 }
 
 .post-buttons img {
@@ -445,37 +495,38 @@ label {
 }
 
 .copy-wrapper {
+  border-bottom: 2px solid lightgrey;
   display: flex;
   padding: 10px 0 35px 0;
-  border-bottom: 2px solid lightgrey;
 }
 
 .copy-link {
-  padding-left: 15px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  border: 1px solid lightgrey;
   flex: 1;
   height: 40px;
-  border: 1px solid lightgrey;
-  border-right: none;
-  border-radius: 5px 0 0 5px;
+  padding-left: 15px;
 }
 
 .copy-button {
-  color: white;
   background-color: #67b8bf;
-  border: none;
-  height: 40px;
   border-radius: 0 5px 5px 0;
+  border: none;
+  color: white;
+  height: 40px;
 }
 
 .email-input {
-  padding-left: 15px;
-  margin-top: 10px;
+  border-radius: 5px 0 0 5px;
   border: 1px solid lightgrey;
   height: 40px;
+  margin-top: 10px;
+  padding-left: 15px;
   width: 100%;
-  border-radius: 5px 0 0 5px;
 }
 
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1350px) {
   .graphs {
     grid-template-columns: 1fr;
@@ -495,6 +546,13 @@ label {
 
 }
 
+@media screen and (max-width: 1200px) {
+  .fancy button:before, 
+  .fancy button:after {
+    width: 30vw; 
+  }
+}
+
 @media screen and (max-width: 1020px) {
   main {
     flex-direction: column;
@@ -505,8 +563,8 @@ label {
   }
 
   .hide-nav {
-    margin-top: 10px;
     display: none;
+    margin-top: 10px;
   }
 
   .more-options {
@@ -515,6 +573,10 @@ label {
 
   .graphs {
     margin-left: 0;
+  }
+
+  .job-details {
+    margin-left: 25px;
   }
 }
 
@@ -528,9 +590,9 @@ label {
   }
 
   .open-section {
-    margin-left: 40px;
-    margin-bottom: 30px;
     justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-left: 40px;
   }
 
   .sidebar {
@@ -545,6 +607,10 @@ label {
     flex-direction: column;
   }
 
+  .fancy button:before, 
+  .fancy button:after {
+    width: 38vw; 
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -558,9 +624,9 @@ label {
   .location-name,
   .content-nav,
   .open-section {
-    text-align: center;
     justify-content: center;
     margin-left: 0;
+    text-align: center;
   }
 
   .circle-graphs {
@@ -584,8 +650,8 @@ label {
   }
 
   .bar-graph-img {
-    width: 300px;
     margin-bottom: 20px;
+    width: 300px;
   }
 
   .small-hide-nav {
